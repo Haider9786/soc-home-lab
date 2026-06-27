@@ -236,13 +236,19 @@ Mapping detections to MITRE is not just a checkbox. Understanding that T1046 is 
 
 ## Screenshots
 
-> Screenshots of the Wazuh dashboard showing:
-> - Agent whiplash connected and active
-> - Brute force alert with full event details
-> - PowerShell detection with Sysmon telemetry
-> - MITRE ATT&CK module showing technique coverage
+### Wazuh Security Events Dashboard
+![Security Events Dashboard](./security-events-dashboard.png)
 
-*(Screenshots to be added — lab is active)*
+### Live Alert Events List — 11 Security Events Detected
+![Events List](./events-list.png)
+
+### Trojaned Binary Detection — Rule 510 (Table View)
+![Trojan Detection Table](./trojan-detection-table.png)
+
+### Trojaned Binary Detection — Raw JSON Alert Data
+![Trojan Detection JSON](./trojan-detection-json.png)
+
+**Key finding:** Wazuh rootcheck detected a trojaned version of `/usr/bin/diff` on the endpoint — a real malware indicator. Alert fired 8 times, mapped to GDPR IV_35.7.d and PCI DSS 10.6.1 compliance frameworks.
 
 ---
 
